@@ -13,5 +13,18 @@ namespace Module1Exercise1
         {
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
         }
+
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                string fullNameText = fullName.Text;
+                string ageText = age.Text;
+                string emailText = email.Text;
+                string confirmEmailText = confirmEmail.Text;
+
+                result.Text = $"Full Name: {fullNameText}<br/>Age: {ageText}<br/>Email: {emailText}<br/>Confirm Email: {confirmEmailText}";
+            }
+        }
     }
 }

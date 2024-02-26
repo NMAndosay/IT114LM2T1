@@ -29,7 +29,7 @@
         <%-- Todo 4.4 Add a compare validator that checks if the confirmation email is the same as the original email --%>
         <%-- Hint: https://www.tutorialspoint.com/asp.net/asp.net_validators.htm#:~:text=CompareValidator%20Control --%>
 
-        <asp:Button Text="Submit" runat="server" UseSubmitBehavior="true" />
+        <asp:Button Text="Submit" runat="server" UseSubmitBehavior="true" OnClick="SubmitButton_Click" />
         <asp:Label ID="result" runat="server" />
         <%-- Todo 4.5 When the user submits the form and all validations pass, display all the inputted texts in the "result" label --%>
     </form>
